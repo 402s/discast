@@ -5,7 +5,7 @@ require('dotenv').config();
 function defineEnv() {
   const env = {};
   Object.entries(process.env).forEach(([key, value]) => {
-    env[`process.env.${key}`] = value;
+    env[`process.env.${key}`] = JSON.stringify(value);
   });
   return env;
 }
