@@ -7,7 +7,7 @@ export default function App(props: AppProps): JSX.Element {
   return (
     <>
       <Link rel="stylesheet" href={styles} />
-      <div class="flex flex-col p-4 w-full min-h-screen">
+      <div class="flex flex-col p-4 w-full min-h-screen bg-gradient-to-tr from-slate-500 to-gray-700">
         <Suspense fallback={<h1>Loading...</h1>}>
           <props.Component />
         </Suspense>
