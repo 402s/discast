@@ -92,7 +92,7 @@ function Message() {
               placeholder="Reply to Alexis Munsayac..."
             />
             <div class="flex flex-row-reverse">
-              <div class="text-sm text-gray-50 space-x-1 p-1 rounded-lg bg-gray-900 bg-opacity-25">
+              <div class="text-xs text-gray-50 space-x-1 py-1 px-2 rounded-lg bg-gray-900 bg-opacity-25">
                 Send
               </div>
             </div>
