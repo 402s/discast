@@ -30,6 +30,10 @@ FIREBASE_CLIENT_MEASUREMENT_ID=
 
 ### Discord
 
+```env
+DISCORD_BOT_TOKEN=
+```
+
 ## Build
 
 ```bash
