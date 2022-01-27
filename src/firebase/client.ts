@@ -13,21 +13,27 @@ import {
   signInAnonymously,
   UserCredential,
 } from 'firebase/auth';
+import { MessageReplyData } from './types';
 
 const FIREBASE_CLIENT_APP = initializeApp({
   apiKey: process.env.FIREBASE_CLIENT_API_KEY,
   authDomain: process.env.FIREBASE_CLIENT_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_CLIENT_API_KEY,
-  storageBucket: process.env.FIREBASE_CLIENT_API_KEY,
-  messagingSenderId: process.env.FIREBASE_CLIENT_API_KEY,
-  appId: process.env.FIREBASE_CLIENT_API_KEY,
-  measurementId: process.env.FIREBASE_CLIENT_API_KEY,
+  projectId: process.env.FIREBASE_CLIENT_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_CLIENT_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_CLIENT_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_CLIENT_APP_ID,
+  measurementId: process.env.FIREBASE_CLIENT_MEASUREMENT_ID,
 });
 const FIREBASE_FIRESTORE = getFirestore(FIREBASE_CLIENT_APP);
 const FIREBASE_AUTH = getAuth(FIREBASE_CLIENT_APP);
 
 export async function signIn(): Promise<UserCredential> {
   return signInAnonymously(FIREBASE_AUTH);
+}
+
+export async function getToken(): Promise<string> {
+  const user = await signIn();
+  return user.user.getIdToken();
 }
 
 export function getMessagesCollection(): CollectionReference {
@@ -38,11 +44,16 @@ export function getMessageDoc(messageId: string): DocumentReference {
   return doc(getMessagesCollection(), messageId);
 }
 
-export function getMessageRepliesCollection(messageId: string): CollectionReference {
-  return collection(getMessageDoc(messageId), 'replies');
+export function getMessageRepliesCollection(
+  messageId: string,
+): CollectionReference<MessageReplyData> {
+  return collection(getMessageDoc(messageId), 'replies') as CollectionReference<MessageReplyData>;
 }
 
-export function getMessageReplyDoc(messageId: string, replyId: string): DocumentReference {
+export function getMessageReplyDoc(
+  messageId: string,
+  replyId: string,
+): DocumentReference<MessageReplyData> {
   return doc(getMessageRepliesCollection(messageId), replyId);
 }
 

@@ -11,7 +11,7 @@ const props = $props<AppProps>();
 export default (
   <>
     <Link rel="stylesheet" href={styles} />
-    <div class="flex flex-col p-4 w-full min-h-screen bg-gradient-to-tr from-slate-500 to-gray-700">
+    <div class="flex flex-col p-4 w-full min-h-screen bg-gray-500">
       <Suspense fallback={<h1>Loading...</h1>}>
         {props.children}
       </Suspense>

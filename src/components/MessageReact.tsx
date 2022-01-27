@@ -1,4 +1,6 @@
 import { JSX, Show } from 'solid-js';
+import { SMALL_BUTTON } from '../styles/classes';
+import classNames from '../utils/classnames';
 
 interface MessageReactProps {
   id: string | null;
@@ -13,7 +15,14 @@ function getEmojiLink(id: string, animated = false): string {
 
 export default function MessageReact(props: MessageReactProps): JSX.Element {
   return (
-    <div class="flex items-center space-x-1 px-1 py-0.5 rounded-lg bg-gray-900 bg-opacity-25">
+    <button
+      type="button"
+      class={classNames(
+        'flex items-center space-x-1',
+        'border border-gray-50',
+        SMALL_BUTTON,
+      )}
+    >
       <div class="w-6 h-6 p-1 flex items-center justify-center">
         <Show when={props.id} fallback={props.name}>
           {(item) => (
@@ -22,6 +31,6 @@ export default function MessageReact(props: MessageReactProps): JSX.Element {
         </Show>
       </div>
       <span class="text-sm">{props.count}</span>
-    </div>
+    </button>
   );
 }

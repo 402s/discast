@@ -23,24 +23,7 @@ function Index(props: IndexProps): JSX.Element {
       <div class="flex flex-col justify-center m-4 max-w-md w-full">
         <For each={props.data.load}>
           {(message) => (
-            <Message
-              content={message.content}
-              username={message.author.username}
-              date={new Date(message.timestamp).toLocaleDateString()}
-              reacts={(
-                <For each={message.reactions}>
-                  {(item) => (
-                    <MessageReact
-                      id={item.emoji.id}
-                      name={item.emoji.name}
-                      animated={item.emoji.animated}
-                      count={item.count}
-                    />
-                  )}
-                </For>
-              )}
-              replies={[]}
-            />
+            <Message message={message} />
           )}
         </For>
       </div>
