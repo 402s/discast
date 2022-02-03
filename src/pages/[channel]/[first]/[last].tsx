@@ -2,7 +2,6 @@ import { For, JSX } from 'solid-js';
 import { isServer } from 'solid-js/web';
 import type * as discordAPI from 'discord-api-types';
 import Message from '../../../components/Message';
-import MessageReact from '../../../components/MessageReact';
 
 interface IndexParams {
   channel: string;

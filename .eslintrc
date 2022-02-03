@@ -9,6 +9,8 @@
   "rules": {
     "react/destructuring-assignment": "off",
     "react/no-unknown-property": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "react/no-namespace": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   }
 }

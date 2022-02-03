@@ -16,6 +16,7 @@ const ENV_KEYS = new Set([
   'FIREBASE_CLIENT_APP_ID',
   'FIREBASE_CLIENT_MEASUREMENT_ID',
   'DISCORD_BOT_TOKEN',
+  'DISCORD_CLIENT_ID',
 ]);
 
 function defineEnv() {
