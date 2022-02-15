@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { For, JSX } from 'solid-js';
 import type * as discordAPI from 'discord-api-types';
 import MessageReact from './MessageReact';

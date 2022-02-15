@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 'use solid-sfc';
 
 import { BUTTON, LARGE_BUTTON } from '../styles/classes';

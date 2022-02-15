@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { onSnapshot, query } from 'firebase/firestore';
 import { For, JSX, Show } from 'solid-js';
 import { getMessageRepliesCollection, getToken } from '../firebase/client';

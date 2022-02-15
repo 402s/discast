@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { JSX, Show } from 'solid-js';
 import { SMALL_BUTTON } from '../styles/classes';
 import classNames from '../utils/classnames';

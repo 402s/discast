@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { For, JSX } from 'solid-js';
 import { isServer } from 'solid-js/web';
 import type * as discordAPI from 'discord-api-types';

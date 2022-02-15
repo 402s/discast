@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { JSX, Show, Suspense } from 'solid-js';
 import { MessageReplyData, UserData } from '../firebase/types';
 
