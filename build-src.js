@@ -31,7 +31,7 @@ function defineEnv() {
 rigidity.createBuild({
   env: process.env.NODE_ENV,
   adapter: httpAdapter,
-  ssrMode: 'async',
+  ssrMode: 'sync',
   esbuild: {
     tsconfig: './tsconfig.json',
     define: {
