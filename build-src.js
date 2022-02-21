@@ -40,6 +40,7 @@ rigidity.createBuild({
     external: [
       'node:timers/promises',
       'node:https',
+      'node:http',
       'node:events'
     ]
   },
