@@ -12,8 +12,8 @@ specifiers:
   firebase: ^9.6.4
   firebase-admin: ^10.0.2
   postcss: ^8.4.5
-  rigidity: ^0.0.21
-  rigidity-adapter-http: ^0.0.21
+  rigidity: ^0.0.22
+  rigidity-adapter-http: ^0.0.22
   solid-js: ^1.3.3
   tailwindcss: ^3.0.6
   typescript: ^4.5.4
@@ -24,8 +24,8 @@ dependencies:
   discord.js: 13.6.0
   firebase: 9.6.7
   firebase-admin: 10.0.2
-  rigidity: 0.0.21_postcss@8.4.5+solid-js@1.3.3
-  rigidity-adapter-http: 0.0.21_rigidity@0.0.21
+  rigidity: 0.0.22_postcss@8.4.5+solid-js@1.3.3
+  rigidity-adapter-http: 0.0.22_rigidity@0.0.22
   solid-js: 1.3.3
 
 devDependencies:
@@ -4678,18 +4678,18 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /rigidity-adapter-http/0.0.21_rigidity@0.0.21:
-    resolution: {integrity: sha512-wFLjFaXRnf301PsL6nyUQoAklLdnWh7zBPyyUYBY9DJV4yFpMJTf4JXmFWyfiwIAktpigbbQPQsMLvuYahnfww==}
+  /rigidity-adapter-http/0.0.22_rigidity@0.0.22:
+    resolution: {integrity: sha512-4LEcbaDKn2JSDnuK36IURu5v97vPJ7ZSnNisHsUamk7XvxuPE5vpz2se749OnbJO2jbTfmOE5RyaBSCYQPGO8A==}
     engines: {node: '>=10'}
     peerDependencies:
       rigidity: ^0.0
     dependencies:
       node-fetch: 3.1.1
-      rigidity: 0.0.21_postcss@8.4.5+solid-js@1.3.3
+      rigidity: 0.0.22_postcss@8.4.5+solid-js@1.3.3
     dev: false
 
-  /rigidity/0.0.21_postcss@8.4.5+solid-js@1.3.3:
-    resolution: {integrity: sha512-NlICMTghKqfJ9COjlkrY7UpMFPoQjE2MqHA5ksVhtqiTNb7oksXvtwjj36YOX/0px+F3IOb3v87w0KgpofPPyA==}
+  /rigidity/0.0.22_postcss@8.4.5+solid-js@1.3.3:
+    resolution: {integrity: sha512-5Mmx7YOLZsJjdyFmPEUOtp/EVFcO8DDlAo/4Oy9l6taR+060XzbtKL6ZTU4ctsR/ZIfqbzHK9tpStuu+GZLKzw==}
     engines: {node: '>=10'}
     peerDependencies:
       postcss: ^8
