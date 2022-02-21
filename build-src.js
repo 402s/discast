@@ -1,5 +1,4 @@
 const rigidity = require('rigidity');
-const vercelAdapter = require('rigidity-adapter-vercel').default;
 const httpAdapter = require('rigidity-adapter-http').default;
 
 require('dotenv').config();
@@ -31,7 +30,7 @@ function defineEnv() {
 
 rigidity.createBuild({
   env: process.env.NODE_ENV,
-  adapter: process.env.NODE_ENV === 'production' ? vercelAdapter : httpAdapter,
+  adapter: httpAdapter,
   ssrMode: 'async',
   esbuild: {
     tsconfig: './tsconfig.json',
