@@ -14,6 +14,7 @@ import {
   UserCredential,
 } from 'firebase/auth';
 import { MessageReplyData } from './types';
+import '../utils/dotenv';
 
 const FIREBASE_CLIENT_APP = initializeApp({
   apiKey: process.env.FIREBASE_CLIENT_API_KEY,
