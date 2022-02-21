@@ -1,6 +1,5 @@
 import firebaseAdmin from 'firebase-admin';
 import { MessageReplyPayload } from './types';
-import '../utils/dotenv';
 
 const CREDENTIALS: firebaseAdmin.AppOptions = {
   credential: firebaseAdmin.credential.cert({

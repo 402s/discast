@@ -1,6 +1,3 @@
-
-import './dotenv';
-
 const CLIENT_ID = process.env.DISCORD_CLIENT_ID ?? '';
 
 export default function getDiscordInvite(): string {
