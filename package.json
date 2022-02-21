@@ -3,7 +3,7 @@
   "scripts": {
     "build": "node build-src",
     "start": "node .rigidity/server",
-    "serve": "npm run build && npm run serve",
+    "serve": "npm run build && npm run start",
     "dev": "cross-env NODE_ENV=development npm run serve"
   },
   "private": true,
