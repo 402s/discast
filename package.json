@@ -2,8 +2,8 @@
   "name": "discast",
   "scripts": {
     "build": "node build-src",
-    "serve": "node .rigidity/server",
-    "start": "npm run build && npm run serve",
+    "start": "node .rigidity/server",
+    "serve": "npm run build && npm run serve",
     "dev": "cross-env NODE_ENV=development npm run start"
   },
   "private": true,
