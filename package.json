@@ -1,7 +1,7 @@
 {
   "name": "discast",
   "scripts": {
-    "build": "cross-env NODE_ENV=development node build-src",
+    "build": "node build-src",
     "start": "node .rigidity/server",
     "serve": "npm run build && npm run start",
     "dev": "cross-env NODE_ENV=development npm run serve"
