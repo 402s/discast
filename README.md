@@ -1,5 +1,7 @@
 # discast
-This is an open source project to demonstate an easy Discord bot that can take a segment of a discord conversation and make it publicly available at a given domain with a SolidJs based Web App. The Web App also enables third party users (with auth) to emoji-react to the conversations seperately from the original discord channel.
+This is an open source project built by the team at 402 for an idea we were experimenting with. It demonstates an easy Discord bot that can take a segment of a discord conversation and make it publicly available at a given domain with a SolidJs based Web App. The Web App also enables third party users (with auth) to emoji-react to the conversations seperately from the original discord channel.
+
+Feel free to use it in any way you wish under the MIT license.
 
 ## Environment Variables
 
